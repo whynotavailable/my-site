@@ -55,10 +55,13 @@ table {
   --primary-on-color: #283618;
   --secondary-color: #DDA15E;
   --secondary-on-color: #BC6C25;
+
+  --on-color: black;
 }
 
 body {
   background-color: var(--background-color);
+  color: var(--on-color);
 
   font-family: "Open Sans", sans-serif !important;
   font-optical-sizing: auto;
@@ -71,4 +74,37 @@ body {
 .container {
   max-width: 980px;
   margin: 0 auto;
+}
+
+nav, .footer {
+  width: fit-content;
+  margin: 1rem auto;
+  color: var(--primary-on-color)
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: var(--primary-on-color);
+}
+
+.nav-split {
+  border-color: var(--primary-on-color);
+  border-width: 1px;
+  border-style: dashed;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+pre[class*=language-] {
+  padding: 0.25rem !important;
+  font-size: 1rem !important;
 }

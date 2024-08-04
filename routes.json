@@ -1,7 +1,8 @@
 [
   {
     "path": "",
-    "template": "base",
-    "route_type": "Page"
+    "template": "home",
+    "route_type": "Page",
+    "page_id": "home"
   }
 ]
