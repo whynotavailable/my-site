@@ -1,8 +1,14 @@
 [
   {
     "path": "",
-    "template": "home",
+    "template": "page",
     "route_type": "Page",
     "page_id": "home"
+  },
+  {
+    "path": "about",
+    "template": "page",
+    "route_type": "Page",
+    "page_id": "about"
   }
 ]

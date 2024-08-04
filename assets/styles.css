@@ -110,3 +110,7 @@ pre[class*=language-] {
   border: 1px solid var(--primary-on-color);
   box-shadow: inset 0 0 3px var(--primary-on-color);
 }
+
+p {
+  margin-bottom: 0.75rem;
+}
