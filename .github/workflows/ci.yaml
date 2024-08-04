@@ -1,5 +1,5 @@
 on:
-  push: {}
+  workflow_dispatch: {}
 
 env:
   IMAGE_NAME: blog
