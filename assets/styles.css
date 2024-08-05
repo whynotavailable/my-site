@@ -82,6 +82,10 @@ nav, .footer {
   color: var(--primary-on-color)
 }
 
+a {
+  color: black;
+}
+
 nav a {
   display: inline-block;
   margin: 0 0.5rem;
@@ -113,4 +117,12 @@ pre[class*=language-] {
 
 p {
   margin-bottom: 0.75rem;
+}
+
+.post-header {
+  margin-bottom: 1rem;
+}
+
+.no-posts {
+  text-align: center;
 }

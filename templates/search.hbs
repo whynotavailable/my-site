@@ -1,0 +1,11 @@
+{{#*inline "page"}}
+{{#each posts}}
+<div>
+  <h2><a href="/post/{{this.slug}}">{{this.title}}</a></h2>
+  <a href="/?tag={{this.tag}}">#{{this.tag}}</a>
+</div>
+{{else}}
+<div class="no-posts">Nothing here yet...</div>
+{{/each}}
+{{/inline}}
+{{> base }}
