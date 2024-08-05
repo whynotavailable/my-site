@@ -50,13 +50,20 @@ table {
 /* My Styles Start Here :) */
 
 :root {
+  --on-color: black;
   --background-color: #FEFAE0;
-  --primary-color: #606C38;
   --primary-on-color: #283618;
+
+  /*
+  --on-color: #edf2f4;
+  --background-color: #2b2d42;
+  --primary-on-color: #8d99ae;
+  */
+
   --secondary-color: #DDA15E;
   --secondary-on-color: #BC6C25;
+  --primary-color: #606C38;
 
-  --on-color: black;
 }
 
 body {
@@ -73,8 +80,10 @@ body {
 }
 
 .container {
-  max-width: 980px;
+  max-width: 900px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 nav, .footer {
@@ -84,7 +93,7 @@ nav, .footer {
 }
 
 a {
-  color: black;
+  color: var(--on-color);
 }
 
 nav a {
@@ -101,7 +110,7 @@ nav a {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -137,4 +146,9 @@ li {
   list-style: disc;
   margin-left: 1.5rem;
   margin-bottom: 0.3rem;
+}
+
+#flip {
+  text-decoration: underline;
+  cursor: pointer;
 }

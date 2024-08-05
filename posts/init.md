@@ -2,12 +2,18 @@ Welcome to my new website! I'm going to lay out here why I built it and how I ch
 
 My experience in blogging/article software is relatively wide. Here is a non-exhaustive list of what I've tried and why I'm not using that tool.
 
-* Wordpress: Too complicated to customize. I feel like you need to be an arcane wizard to understand its templating system.
-* Ghost: It's fine, technically I could have built my CLI to point to ghost and it would work fine. I just don't want to pay them if I can build something myself.
-* Medium: You can't customize Medium, and you also can't build categories of content (e.g. articles on programming and game reviews).
-* Substack: Just a pain to use.
-* Drupal: Nightmare to host for a low cost without using some sketchy company.
-* Jekyll: No proper search, and static content growing linearly means performance and usability will just get worse over time.
+* Wordpress:  
+  Too complicated to customize. I feel like you need to be an arcane wizard to understand its templating system.
+* Ghost:  
+  It's fine, technically I could have built my CLI to point to ghost and it would work fine. I just don't want to pay them if I can build something myself.
+* Medium:  
+  You can't customize Medium, and you also can't build categories of content (e.g. articles on programming and game reviews).
+* Substack:  
+  Just a pain to use.
+* Drupal:  
+  Nightmare to host for a low cost without using some sketchy company.
+* Jekyll:  
+  No proper search, and static content growing linearly means performance and usability will just get worse over time.
 
 Had the appropriate technologies not have presented themselves to me I'd probably just use Ghost. Luckily I heard about Turso.
 
