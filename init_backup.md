@@ -1,4 +1,4 @@
-Welcome to my new website! I'm going to lay out here why I built it and how I chose the technologies used. Also I'm aware this page looks terrible right now, I need content to style.
+Welcome to my new website! I'm going to lay out here why I built it and how I chose the technologies used.
 
 My experience in blogging/article software is relatively wide. Here is a non-exhaustive list of what I've tried and why I'm not using that tool.
 
