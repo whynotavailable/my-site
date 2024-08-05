@@ -1,4 +1,4 @@
-Welcome to my new website! I'm going to lay out here why I built it and how I chose the technologies used. Also I'm aware this page looks terrible right now, I need content to style.
+Welcome to my new website! I'm going to lay out here why I built it and how I chose the technologies used.
 
 My experience in blogging/article software is relatively wide. Here is a non-exhaustive list of what I've tried and why I'm not using that tool.
 
@@ -18,6 +18,8 @@ My main problem with side projects where I need data is that data is actually ki
 Turso has a ton of limitations, it's sqlite, and sqlite is insanely limited in what you can do with it. In Postgres I can make HSTORE or ARRAY fields to make composable fields. As an example a tag field can be represented as an array of text and you can query for all rows with that contain a value. Sqlite has some work in the JSONB space that I'm looking forward to testing, but for now it's altered how I would normally design my data.
 
 The reason I decided to use Turso is because it would work and not be terribly expensive. The free tier would have worked, but I paid the ten bucks so that I don't have a performance degradation caused by a sleepy database. If you have a need where sqlite would work, I'd give them a shot. I'll probably write an article purely about Turso later, but for now I'll leave it here.
+
+A fun consequence of an outside network managed database is that you can use it as a control plane. Part of the pain of data is that you need to write authorization logic, and while I could use some JWT auth middleware and make an endpoint to update the database I don't need to. The CLI directly updates the database. This has an additional side effect that my local version of the site uses the exact same data as the one in production since it's pointed to the same place. That has made styling significantly easier since I get to use real data for it. Assuming I'm not updating the rust code I just call `whynotblog --dev true` and I'm on my way. When I'm done writing a piece I just call `whynotblog-cli post {slug}` and it instantly updates the site.
 
 ## Languages
 

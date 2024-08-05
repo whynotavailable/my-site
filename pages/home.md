@@ -11,3 +11,9 @@ let builder = Config::builder()
     ));
 ```
 
+I'm going to use this as a todo.
+
+* Paging on the search.
+* Bold (and probably italic) styles.
+* Page title.
+* Not shit error handling.
