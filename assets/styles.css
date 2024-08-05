@@ -120,6 +120,11 @@ p, ul {
   margin-bottom: 1rem;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .post-header {
   margin-bottom: 1rem;
 }
