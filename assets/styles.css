@@ -69,6 +69,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  line-height: 1.6rem;
 }
 
 .container {
@@ -130,5 +131,5 @@ p, ul {
 li {
   list-style: disc;
   margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
