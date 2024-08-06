@@ -60,3 +60,15 @@ Pricing in container apps is slightly weird. I'm not going to really get an unde
 More than that, one metric I could really use is request length. I really don't want to build that into my app since it's less accurate than a proper response from the LB I know they are using.
 
 So far though I'm happy with where it's at. I'll be adding a few extras like analytics and paging, but it's good enough for a few weeks to let it settle and write a few articles.
+
+## Performance
+
+Since I went through the effort to figure out the performance of my site at this point, I figured I'd attach some info on here on what I found. Note: these aren't terribly serious performance tests, just messing around with k6.
+
+The first test was a single page load. The throughput over the test was `69.773569/s`. The average request time was `142.6ms` and the p95 was `200.02ms`. It never went above 10 MB (this was true for all of my tests). The CPU went up to 0.15 CPUs.
+
+The bottleneck here was clearly the database. So obviously I duplicated the page route to return some basic fake data so that I could render the site without needing a database in the hot path.
+
+Doing that for my second test got me significantly better results (though obviously not useful ones for actually operating the site.) The throughput was `638.170175/s`. Response times were `15.34ms` for the average and `18.49ms` for the p95. Having only a `3.15ms` difference between them is pretty crazy for me. When I'm performance testing dotnet apps at work I regularly see hundreds of millisecond differences.
+
+While this isn't the fasted site I've written, it's very close. The other one was significantly more optimized and didn't require serializing more than three fields. Just some fun information.
