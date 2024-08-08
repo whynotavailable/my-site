@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: '"Open Sans", sans-serif'
+        body: '"Open Sans", sans-serif',
+        mono: '"Roboto Mono", monospace'
       },
       colors: {
         black: '#2b2d42',

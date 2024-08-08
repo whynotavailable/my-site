@@ -135,7 +135,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -581,6 +581,10 @@ video {
   display: inline;
 }
 
+.contents {
+  display: contents;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -618,6 +622,10 @@ video {
   line-height: 1.75rem;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .text-on {
   --tw-text-opacity: 1;
   color: rgb(141 153 174 / var(--tw-text-opacity));
@@ -627,6 +635,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(237 242 244 / var(--tw-text-opacity));
 }
+
+/* These styles  */
 
 p {
   margin-bottom: 0.75rem;
@@ -655,11 +665,6 @@ ul {
 }
 
 pre[class*=language-] {
-  /*padding: 0.25rem !important;
-  font-size: 1rem !important;
-  border: 1px solid var(--primary-on-color);
-  box-shadow: inset 0 0 3px var(--primary-on-color);*/
-  /* Needs to be done this way to override prism */
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(141 153 174 / var(--tw-border-opacity));
@@ -670,3 +675,8 @@ pre[class*=language-] {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.contents code {
+  text-align: left;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+}

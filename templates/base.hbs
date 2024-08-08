@@ -23,42 +23,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet" />
-  <script>
-    function setColors() {
-      if (localStorage.getItem("color") === "dark") {
-        document.documentElement.style.setProperty("--on-color", "#edf2f4");
-        document.documentElement.style.setProperty("--background-color", "#2b2d42");
-        document.documentElement.style.setProperty("--primary-on-color", "#8d99ae");
-      }
-      else {
-        document.documentElement.style.setProperty("--on-color", "black");
-        document.documentElement.style.setProperty("--background-color", "#FEFAE0");
-        document.documentElement.style.setProperty("--primary-on-color", "#283618");
-      }
-    }
-
-    function flipColors() {
-      if (localStorage.getItem("color") === "dark") {
-        localStorage.setItem("color", "light");
-      }
-      else {
-        localStorage.setItem("color", "dark");
-      }
-
-      setColors();
-    }
-
-    setColors();
-  </script>
   <style>
+    /* This is needed here otherwise PostCSS will strip the important part out. */
     pre[class*=language-] {
       padding: 0.25rem !important;
     }
   </style>
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-black text-white font-normal">
   <div class="max-w-[900px] px-4 mx-auto text-lg font-body">
     <nav class="my-2 text-on mx-auto w-fit">
       <a class="mx-2" href="/">Home</a>
@@ -68,17 +46,15 @@
       <a class="mx-2" href="/?tag=programming">Programming</a>
     </nav>
     <hr class="border-on mb-2 border-dashed" />
-    {{> page}}
+    <div class="contents">
+      {{> page}}
+    </div>
     <hr class="border-on mt-2 border-dashed" />
     <div class="my-2 text-on mx-auto w-fit">
       Welcome to my website! I like to program.
-      <span id="flip">Flip</span>
     </div>
   </div>
 
-  <script>
-    document.getElementById("flip").addEventListener('click', () => {flipColors()});
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
 </body>

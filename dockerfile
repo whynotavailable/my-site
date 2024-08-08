@@ -18,7 +18,7 @@ WORKDIR /app
 COPY . .
 
 # Check cargo is visible
-RUN cargo install whynotblog@0.1.5
+RUN cargo install whynotblog@0.1.6
 
 
 ENTRYPOINT ["whynotblog"]

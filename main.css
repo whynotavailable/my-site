@@ -28,3 +28,6 @@ pre[class*=language-] {
   @apply shadow-inner shadow-on border border-on;
 }
 
+.contents code {
+  @apply font-mono text-left font-extralight;
+}
