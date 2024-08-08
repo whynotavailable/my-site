@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* These styles  */
+
+p {
+  @apply mb-3 text-justify;
+}
+
+h1 {
+  @apply text-4xl mb-1;
+}
+
+h2 {
+  @apply text-3xl mb-1;
+}
+
+a {
+  @apply underline;
+}
+
+ul {
+  @apply list-disc mb-3;
+}
+
+pre[class*=language-] {
+  @apply shadow-inner shadow-on border border-on;
+}
+
