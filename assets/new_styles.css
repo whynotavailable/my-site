@@ -661,7 +661,14 @@ a {
 
 ul {
   margin-bottom: 0.75rem;
+  margin-left: 1rem;
   list-style-type: disc;
+}
+
+ol {
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  list-style-type: decimal;
 }
 
 pre[class*=language-] {

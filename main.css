@@ -21,7 +21,11 @@ a {
 }
 
 ul {
-  @apply list-disc mb-3;
+  @apply list-disc mb-3 ml-4;
+}
+
+ol {
+  @apply list-decimal mb-3 ml-4;
 }
 
 pre[class*=language-] {
