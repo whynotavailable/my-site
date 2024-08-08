@@ -10,9 +10,11 @@ module.exports = {
         mono: '"Roboto Mono", monospace'
       },
       colors: {
-        black: '#2b2d42',
-        white: '#edf2f4',
-        on: '#8d99ae'
+        black: '#161616',
+        white: '#f2f4f8',
+        on: '#f16da6',
+        code: '#c8a5ff',
+        muted: '#8cb6ff'
       }
     },
   },

@@ -16,8 +16,8 @@ h2 {
   @apply text-3xl mb-1;
 }
 
-a {
-  @apply underline;
+.contents a {
+  @apply underline text-on;
 }
 
 ul {
@@ -33,5 +33,5 @@ pre[class*=language-] {
 }
 
 .contents code {
-  @apply font-mono text-left font-extralight;
+  @apply font-mono text-left font-light text-code;
 }

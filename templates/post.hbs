@@ -1,8 +1,10 @@
 {{#*inline "page"}}
 <div class="post-header">
   <h1>{{ title }}</h1>
-  <a href="/?tag={{ tag }}">#{{ tag }}</a>
+  <a class="text-on" href="/?tag={{ tag }}">#{{ tag }}</a>
 </div>
-{{{ content }}}
+<div class="contents">
+  {{{ content }}}
+</div>
 {{/inline}}
 {{> base }}
