@@ -700,3 +700,7 @@ pre[class*=language-] {
   --tw-text-opacity: 1;
   color: rgb(200 165 255 / var(--tw-text-opacity));
 }
+
+.contents li {
+  margin-bottom: 0.5rem;
+}

@@ -35,3 +35,7 @@ pre[class*=language-] {
 .contents code {
   @apply font-mono text-left font-light text-code;
 }
+
+.contents li {
+  @apply mb-2;
+}
