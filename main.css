@@ -5,15 +5,19 @@
 /* These styles  */
 
 p {
-  @apply mb-3 text-justify;
+  @apply text-justify;
+}
+
+.contents p, .contents pre, .contents ol, .contents ul {
+  @apply mb-4
 }
 
 h1 {
-  @apply text-4xl mb-1;
+  @apply text-4xl mb-2;
 }
 
 h2 {
-  @apply text-3xl mb-1;
+  @apply text-3xl mb-2;
 }
 
 .contents a {
@@ -21,11 +25,11 @@ h2 {
 }
 
 ul {
-  @apply list-disc mb-3 ml-4;
+  @apply list-disc ml-4;
 }
 
 ol {
-  @apply list-decimal mb-3 ml-4;
+  @apply list-decimal ml-4;
 }
 
 pre[class*=language-] {
